@@ -1,6 +1,7 @@
 <?php 
     require_once './partials/header.php';
     require_once './partials/sidenav.php';
+    require_once './admin.php';
 
     $query = "SELECT * FROM admins WHERE id = 1";
     $result = mysqli_query($conn, $query);

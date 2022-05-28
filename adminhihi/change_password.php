@@ -1,6 +1,8 @@
 <?php 
     require_once './partials/header.php';
     require_once './partials/sidenav.php';
+    require_once './admin.php';
+
 ?>
 
 <?php 
