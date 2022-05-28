@@ -31,9 +31,6 @@
                 # code...
                 break;
         }
-    } else {
-        header('Location: trang-chu');
-        exit;
     }
 
     function add_to_cart($conn, $id, $quantity) {

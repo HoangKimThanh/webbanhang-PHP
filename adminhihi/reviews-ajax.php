@@ -1,10 +1,6 @@
 <?php 
     require_once '../database/database.php';
     require_once '../functions/reviews.php';
-
-    if (!isset($_SESSION['admin'])) {
-        header('Location: ./login.php');
-    }
 ?>
 <?php 
     if (isset($_POST['id'])) {
