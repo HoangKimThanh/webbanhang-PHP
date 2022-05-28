@@ -216,10 +216,10 @@
                 });
             });
 
-                    var provinceId = document.getElementById('receiver_province').innerText;
-                    var districtId = document.getElementById('receiver_district').innerText;
-                    var wardId = document.getElementById('receiver_ward').innerText;
-                    var address = document.getElementById('receiver_address').innerText;
+                    var provinceId = document.getElementById('receiver_province').value;
+                    var districtId = document.getElementById('receiver_district').value;
+                    var wardId = document.getElementById('receiver_ward').value;
+                    var address = document.getElementById('receiver_address').value;
 
                     if (provinceId && districtId && wardId && address) {
                         var province = provinces.find(province => {
