@@ -15,6 +15,7 @@
         <thead>
             <tr>
                 <th>STT</th>
+                <th>ID</th>
                 <th>Họ tên</th>
                 <th>Email</th>
                 <th>Số điện thoại</th>
@@ -30,6 +31,7 @@
             ?>
                 <tr>
                     <td><?php echo $i; ?></td>
+                    <td><?php echo $each['id']; ?></td>
                     <td><?php echo $each['name']; ?></td>
                     <td><?php echo $each['email']; ?></td>
                     <td><?php echo $each['phone']; ?></td>
