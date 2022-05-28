@@ -53,7 +53,7 @@
                 }
                 break;
             case '1':
-                $query = "SELECT MONTH(time) AS date, sum(total) AS revenue 
+                $query = "SELECT DAYOFMONTH(time) AS date, sum(total) AS revenue 
                 FROM invoices 
                 WHERE status = 3 AND MONTH(time) = MONTH( current_date ) - 1 AND YEAR( time) = YEAR( current_date )
                 GROUP BY date";
@@ -68,7 +68,7 @@
                 }
                 
 
-                $query = "SELECT MONTH(time) AS date, sum(total) AS revenue 
+                $query = "SELECT DAYOFMONTH(time) AS date, sum(total) AS revenue 
                 FROM invoices 
                 WHERE status = 3 AND MONTH(time) = MONTH(now()) AND YEAR( time) = YEAR( current_date )
                 GROUP BY date";

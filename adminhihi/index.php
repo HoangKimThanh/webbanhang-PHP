@@ -184,24 +184,24 @@
                             let arrRevenueLast = [];
                             let arrRevenueCurrent = [];
         
-                            for (const key in arrIndex) {
+                            for (const value of arrIndex) {
                                 if (typeof last == 'undefined') {
                                     arrRevenueLast.push(0);
                                 } else {
-                                    if (typeof last[key] == 'undefined') {
+                                    if (typeof last[value] == 'undefined') {
                                         arrRevenueLast.push(0);
                                     } else {
-                                        arrRevenueLast.push(last[key])
+                                        arrRevenueLast.push(last[value])
                                     }
                                 }
 
                                 if (typeof current == 'undefined') {
                                     arrRevenueCurrent.push(0);
                                 } else {
-                                    if (typeof current[key] == 'undefined') {
+                                    if (typeof current[value] == 'undefined') {
                                         arrRevenueCurrent.push(0);
                                     } else {
-                                        arrRevenueCurrent.push(current[key]);
+                                        arrRevenueCurrent.push(current[value]);
                                     }
                                 }
                             }
