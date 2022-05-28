@@ -47,6 +47,8 @@
                 <p class="review_content">' . $content . '</p>
             </div>
         </li>';
+        header('Refresh:0');
+        exit;
         }
     }
 ?>
