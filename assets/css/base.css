@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #000;
+    --white-color: #fff;
+    --red-color: red;
+    --ccc-color: #ccc;
+    --ddd-color: #ddd;
+    --eee-color: #eee;
+    --transparent: transparent;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.highlight {
+    color: var(--red-color);
+    font-weight: bold;
+}
+
+/* .active {
+    color: red;
+    font-weight: bold;
+} */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    padding: 0.7em 1em;
+    margin: 1.5em 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn + .btn {
+    margin-left: 8px;
+}
+
+.btn--white {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.btn--ccc {
+    background: var(--ccc-color);
+    color: var(--primary-color);
+}
+
+.btn--ddd {
+    background: var(--ccc-color);
+    color: var(--primary-color);
+}
+
+.btn--eee {
+    background: var(--eee-color);
+    color: var(--primary-color);
+}
+
+.btn--active {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn--disable {
+    background: var(--eee-color);
+    color: var(--ccc-color);
+}

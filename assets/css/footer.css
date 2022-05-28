@@ -1,0 +1,100 @@
+/******************** Footer ********************/
+.footer {
+    border-top: 4px solid #000;
+}
+
+.footer__heading {
+    margin-bottom: 12px;
+    padding-top: 32px;
+}
+
+/* Form */
+.footer__form {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+}
+
+.footer__form input {
+    padding-left: 4px;
+    height: 38px;
+    border: none;
+    outline: none;
+}
+
+.footer__form input[type=email] {
+    width: 220px;
+}
+
+.footer__form input[type="submit"] {
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer__list {
+    list-style-type: none;
+}
+
+.footer__list li {
+    padding: 8px 0;
+}
+
+.footer__list li a {
+    display: flex;
+    align-items: center;
+}
+
+.footer__list li a:hover {
+    opacity: 0.6;
+}
+
+.footer__list li i {
+    font-size: 16px;
+    margin: -1px 8px 0 0;
+}
+
+/* Download */
+.footer__download {
+    display: flex;
+    padding-top: 8px;
+}
+
+.footer__download-link-QR {
+    display: inline-block;
+    width: 48%;
+}
+
+.footer__download-link-QR img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.footer__download-app {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer__download-app a {
+    display: inline-block;
+}
+
+.footer__download-app img {
+    width: 100%;
+    display: block;
+    height: 20px;
+}
+
+/* Copyright */
+.footer__copyright {
+    background-color: #f5f5f5;
+    margin-top: 16px;
+    padding: 24px 0;
+    display: block;
+}
+
+.footer__copyright p{
+    text-align: center;
+}

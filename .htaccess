@@ -1,0 +1,43 @@
+Options -Indexes
+ErrorDocument 400 /404.html
+ErrorDocument 401 /404.html
+ErrorDocument 402 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 500 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule "trang-chu" "index.php"
+RewriteRule "gioi-thieu" "intro.php"
+RewriteRule "^cua-hang$" "products.php"
+RewriteRule "tin-tuc" "news.php"
+RewriteRule "lien-he" "contact.php"
+RewriteRule "tim-kiem" "lookup.php"
+RewriteRule "tra-cuu" "invoice_lookup.php"
+RewriteRule "dang-nhap" "signin.php"
+RewriteRule "dang-ky" "signup.php"
+RewriteRule "dang-xuat" "signout.php"
+RewriteRule "gio-hang" "cart.php"
+RewriteRule "dat-hang" "order.php"
+
+RewriteRule "doi-email" "change_email.php"
+RewriteRule "doi-mat-khau" "change_password.php"
+RewriteRule "quen-mat-khau" "forgot_password.php"
+RewriteRule "lich-su-mua-hang" "history.php"
+RewriteRule "cam-on" "invoice_process.php"
+RewriteRule "mat-khau-moi" "new_password.php"
+RewriteRule "thong-tin-ca-nhan" "profile.php"
+RewriteRule "nhap-ma-xac-thuc" "verify_code.php"
+
+
+RewriteRule "^cua-hang/([0-9]+)-([a-zA-Z0-9-]+)$" "product_detail.php?id=$1&name=$2"
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.html [L]
+</IfModule>
+
+RewriteCond %{QUERY_STRING} (sp_executesql) [NC,OR]
+RewriteCond %{QUERY_STRING} (.*)(union|\*|\(|\)|select|<|>|0x|/|\\|,|;|'|"|\[|\]|and|by|{|}|script)(.*) [NC]
+RewriteRule ^(.*)$ - [F,L]
