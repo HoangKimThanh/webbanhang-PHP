@@ -119,12 +119,12 @@
                 <div class="row">
                     <div class="col l-12 m-12 c-12">
                         <h2>Chi tiết sản phẩm</h2>
-                        <p class="product-box__detail"><?php echo $product['detail']; ?></p>
+                        <p class="product-box__detail"><?php echo nl2br($product['detail']) ?></p>
                     </div>
 
                     <div class="col l-12 m-12 c-12">
                         <h2>Mô tả sản phẩm</h2>
-                        <p class="product-box__description"><?php echo $product['description']; ?></p>
+                        <p class="product-box__description"><?php echo nl2br($product['description']) ?></p>
                     </div>
                 </div>
                 <div class="row">
