@@ -41,17 +41,17 @@
     // Khong ton tai, ip mmoi => insert
     // Ton tai, check referer
 
-    if (!isset($_SERVER['HTTP_REFERER'])) {
+    function create_or_update_page_views($conn, $ip_address, $date) {
         if (is_unique_ip($conn, $ip_address, $date)) {
             update_page_view($conn, $ip_address, $date);
         } else {
             insert_page_view($conn, $ip_address, $date);
         }
-    } else {
-        if (strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST']) < 0) {
-            update_page_view($conn, $ip_address, $date);
-        }
     }
+
+    if (!isset($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'], $_SERVER['HTTP_HOST']) < 0) {
+        create_or_update_page_views($conn, $ip_address, $date);
+    };
     
     if (isset($_SESSION['customer']['id'])) {
         $customer_id = $_SESSION['customer']['id'];
@@ -69,7 +69,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="http://phukienuitnhom10.com" />
+    <base href="https://phukienhkt.000webhostapp.com/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,7 +88,7 @@
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/lightslider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title> <?php if(isset($title)) echo $title . " | "; ?>PhuKienUITNhom12</title>
+    <title> <?php if(isset($title)) echo $title . " | "; ?>PhuKienHKT</title>
 </head>
 <body>
     <div id="app">

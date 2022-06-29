@@ -3,9 +3,9 @@
             <div class="grid wide footer__mobile">
                 <div class="row">
                     <div class="col l-3 m-12 c-12 footer__input">
-                        <h3 class="footer__heading"><b>PhuKienUITNhom10</b></h3>
+                        <h3 class="footer__heading"><b>PhuKienHKT</b></h3>
                         <p>
-                            PhuKienUITNhom10 là một cửa hàng máy tính chuyên bán phụ kiện máy tính tại Thành phố Hồ Chí Minh luôn đem đến sản phẩm chất lượng với giá cả phải chăng phù hợp với sinh viên.
+                            PhuKienHKT là một cửa hàng máy tính chuyên bán phụ kiện máy tính tại Thành phố Hồ Chí Minh luôn đem đến sản phẩm chất lượng với giá cả phải chăng phù hợp với sinh viên.
                         </p>
                     </div>
                     <div class="col l-2 m-3 c-6">
@@ -39,11 +39,6 @@
                     <div class="col l-2 m-3 c-6">
                         <h3 class="footer__heading">THEO DÕI</h3>
                         <ul class="footer__list">
-                            <li>
-                                <a href="https://shopee.vn/phnguyncng">
-                                    <img src="./assets/img/shopee.png" alt="" style="height: 20px;">
-                                </a>
-                            </li>
                             <li>
                                 <a href="">
                                     <i class="fab fa-facebook"></i>
@@ -80,7 +75,7 @@
             </div>
             <div class="footer__copyright">
                 <div class="grid wide">
-                    <p>© 2022 PhuKienUITNhom10. Tất cả các quyền được bảo lưu.</p>
+                    <p>© 2022 PhuKienHKT. Tất cả các quyền được bảo lưu.</p>
                 </div>
             </div>
         </footer>

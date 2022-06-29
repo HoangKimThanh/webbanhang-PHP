@@ -244,6 +244,10 @@
                 }, 'Mật khẩu nhập lại không chính xác'),
                 
             ],
+            // onSubmit: function(data) {
+            //     // call API
+            //     console.log(data);
+            // }
             })
         </script>
         <script src="https://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.js"></script>

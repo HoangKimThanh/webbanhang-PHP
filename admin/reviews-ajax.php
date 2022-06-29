@@ -1,6 +1,7 @@
 <?php 
     require_once '../database/database.php';
     require_once '../functions/reviews.php';
+
 ?>
 <?php 
     if (isset($_POST['id'])) {

@@ -3,6 +3,7 @@
     require_once './partials/sidenav.php';
     require_once './admin.php';
 
+
     $query = "SELECT * FROM admins WHERE id = 1";
     $result = mysqli_query($conn, $query);
     $account = mysqli_fetch_array($result);
@@ -12,7 +13,6 @@
             $new_account = $_POST['account'];
 
             $account = $_SESSION['admin']['account'];
-            
             update_account_admin($conn, $account, $new_account);
         }
     }

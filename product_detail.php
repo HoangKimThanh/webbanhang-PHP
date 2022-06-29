@@ -47,9 +47,9 @@
                 <p class="review_content">' . $content . '</p>
             </div>
         </li>';
+        }
         header('Refresh:0');
         exit;
-        }
     }
 ?>
 <?php 
@@ -107,24 +107,18 @@
                             </div>
                             <br>
                             <button class="add-to-cart">Thêm vào giỏ</button>
-                            <p>
-                                Mua tại gian hàng chúng tôi trên Shopee: 
-                                <a href="<?php echo $product['link_shopee'] ?>">
-                                    <img src="./assets/img/shopee.png" alt="link shopee" style="height: 30px">
-                                </a>
-                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col l-12 m-12 c-12">
                         <h2>Chi tiết sản phẩm</h2>
-                        <p class="product-box__detail"><?php echo nl2br($product['detail']) ?></p>
+                        <p class="product-box__detail"><?php echo html_entity_decode($product['detail']); ?></p>
                     </div>
 
                     <div class="col l-12 m-12 c-12">
                         <h2>Mô tả sản phẩm</h2>
-                        <p class="product-box__description"><?php echo nl2br($product['description']) ?></p>
+                        <p class="product-box__description"><?php echo nl2br($product['description']); ?></p>
                     </div>
                 </div>
                 <div class="row">

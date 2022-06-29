@@ -1,4 +1,4 @@
-# PhuKienUITNhom10 - Web bán phụ kiện máy tính
+# PhuKienHKT - Web bán phụ kiện máy tính
 
 ## CÁC CÔNG NGHỆ/KỸ THUẬT SỬ DỤNG
 - **Frond-End:** HTML, CSS, Javascript, jQuery, Bootstrap
@@ -8,4 +8,4 @@
 - **Bảo mật:** Phòng chống SQL Injection, XSS, CSRF cơ bản
 
 ## DEMO 
-- **Link Web demo:** https://phukienuitnhom10.000webhostapp.com
+- **Link Web demo:** https://phukienhkt.000webhostapp.com
